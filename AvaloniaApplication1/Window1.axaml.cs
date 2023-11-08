@@ -2,13 +2,11 @@ using Avalonia.Controls;
 
 namespace AvaloniaApplication1
 {
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
             InitializeComponent();
         }
-
-
     }
 }

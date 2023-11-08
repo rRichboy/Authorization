@@ -8,15 +8,18 @@
 	<Window.Background>
 		<ImageBrush Source="C://background.jpg"/>
 	</Window.Background>
-    <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-			<TextBlock TextAlignment ="Center" Text="Авторизация" FontWeight="Bold"/>
-            <TextBlock Text="Логин:" FontWeight="Bold"/>
-            <TextBox Margin="0 5" Watermark="Логин" Name="UsernameTextBox" Width="200"/>
-            <TextBlock Text="Пароль:" FontWeight="Bold"/>
-            <TextBox Margin="0 5" Watermark="Пароль" Name="PasswordTextBox" Width="200" PasswordChar="*"/>
-            <Button Name="LoginButton" Content="Войти" Background="blue" Foreground="White" 
-					HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	<Grid>
+		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+			<TextBlock TextAlignment="Center" Text="Авторизация" FontWeight="Bold"/>
+			<TextBlock Text="Логин:" FontWeight="Bold" Foreground="White"/>
+			<TextBox Margin="0 5" Watermark="Логин" Name="UsernameTextBox" Width="200" Background="Transparent"/>
+			<TextBlock Text="Пароль:" FontWeight="Bold"/>
+			<TextBox Margin="0 5" Watermark="Пароль" Name="PasswordTextBox" Width="200" PasswordChar="*" Background="Transparent"/>
+			<Grid>
+				<Button Name="LoginButton" Content="Войти" Background="blue" Foreground="White"/>
+				<Button Name="RegButton" Content="Регистрация" Background="green" Foreground="White"
+                        HorizontalAlignment="Right"/>
+			</Grid>
 			<TextBox Watermark="Поле для ввода бебриков" Margin="0 5" Height="100" AcceptsReturn="True" TextWrapping="Wrap" MinWidth="200" MaxWidth="100"/>
 		</StackPanel>
 	</Grid>
